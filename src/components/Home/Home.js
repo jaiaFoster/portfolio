@@ -33,7 +33,7 @@ function Home() {
                 src={headshot}
                 alt="home pic"
                 className="img-home"
-                style={{ maxHeight: "450px", }}
+                style={{ maxHeight: "100%", width: "100%", maxWidth: "450px"}}
               />
             </Col>
             
