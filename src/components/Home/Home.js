@@ -1,6 +1,6 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import headshot from "../../Assets/headshot.png";
+import headshot from "../../Assets/babybean.jpg";
 
 
 
