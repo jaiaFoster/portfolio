@@ -23,7 +23,7 @@ function Home() {
               </h1>
 
               <h1 className="heading-name">
-              Software Developer
+              A Software Developer
               </h1>
 
             </Col>
