@@ -8,9 +8,9 @@ function AboutCard() {
       <Card.Body>
         <blockquote className="blockquote mb-0">
           <p style={{ textAlign: "justify" }}>
-            My name is <span className="red">Jaia Foster</span>, and I'm passionate about teamwork and automation.
+            My name is <span className="purple">Jaia Foster</span>, and I'm passionate about teamwork and automation.
 
-            <br /> I am completing my senior year at Rennselear Polytechnic Institute (RPI), where I am majoring in Mechanical Engineering and minoring in Economics.
+            <br /> I'm completing my senior year at Rennselear Polytechnic Institute (RPI), where I'm majoring in Mechanical Engineering and minoring in Economics.
             <br />
             I've always loved the act of creation, and this act has expanded into many different forms since enrolling at RPI. From dabbling in programming to designing workflows and being a team leader, I've learned that creation needs not always result in a physical object.
             <br />
@@ -28,7 +28,7 @@ function AboutCard() {
               <ImPointRight /> Playing board games with friends 
             </li>
             <li className="about-activity">
-              <ImPointRight /> Consuming content of all kinds: sci-fi, philosophy, anime, literary fiction, etc.
+              <ImPointRight /> Consuming literary content of all kinds
             </li>
           </ul>
 
