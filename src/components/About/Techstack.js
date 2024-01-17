@@ -1,54 +1,55 @@
 import React from "react";
 import { Col, Row } from "react-bootstrap";
-import { CgCPlusPlus } from "react-icons/cg";
-import {
-  DiJavascript1,
-  DiPhp,
-  DiMysql,
-  DiHtml5,
-  DiPython,
-  DiCss3,
-  DiJava,
-} from "react-icons/di";
-import {
-  SiCsharp,
-  SiTypescript
-} from "react-icons/si";
+import { FaCube, FaShapes, FaFileWord, FaFileExcel, FaFilePowerpoint, FaIndustry, FaPython, FaCode } from "react-icons/fa";
+import { DiMatlab, DiCode, DiTerminal } from "react-icons/di";
+import { GiGearStickPattern } from "react-icons/gi";
 
 function Techstack() {
   return (
     <Row style={{ justifyContent: "center", paddingBottom: "50px" }}>
+      {/* Solid Modeling Icons */}
       <Col xs={4} md={2} className="tech-icons">
-        <DiJava />
+        <FaCube />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <DiPython />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <DiJavascript1 />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <SiTypescript />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <SiCsharp />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <CgCPlusPlus />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <DiPhp />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <DiMysql />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <DiHtml5 />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <DiCss3 />
+        <FaShapes />
       </Col>
 
+      {/* Technologies Icons */}
+      <Col xs={4} md={2} className="tech-icons">
+        <FaFileWord />
+      </Col>
+      <Col xs={4} md={2} className="tech-icons">
+        <FaFileExcel />
+      </Col>
+      <Col xs={4} md={2} className="tech-icons">
+        <FaFilePowerpoint />
+      </Col>
+      <Col xs={4} md={2} className="tech-icons">
+        <DiCode />
+      </Col>
+      <Col xs={4} md={2} className="tech-icons">
+        <DiTerminal />
+      </Col>
+
+      {/* Lab Skills Icons */}
+      <Col xs={4} md={2} className="tech-icons">
+        <FaIndustry />
+      </Col>
+      <Col xs={4} md={2} className="tech-icons">
+        <DiMatlab />
+      </Col>
+      <Col xs={4} md={2} className="tech-icons">
+        <GiGearStickPattern />
+      </Col>
+
+      {/* Programming Icons */}
+      <Col xs={4} md={2} className="tech-icons">
+        <FaPython />
+      </Col>
+      <Col xs={4} md={2} className="tech-icons">
+        <FaCode />
+      </Col>
     </Row>
   );
 }
