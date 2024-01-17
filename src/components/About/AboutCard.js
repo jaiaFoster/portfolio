@@ -8,27 +8,27 @@ function AboutCard() {
       <Card.Body>
         <blockquote className="blockquote mb-0">
           <p style={{ textAlign: "justify" }}>
-            My name is <span className="purple">Broderick Boucher</span>, but most people call me <span className="purple">Brody</span>.
+            My name is <span className="red">Jaia Foster</span>, and I'm passionate about teamwork and automation.
 
-            <br /> I am completing my senior year at Rennselear Polytechnic Institute, where I am majoring in Computer Science and minoring in Economics.
+            <br /> I am completing my senior year at Rennselear Polytechnic Institute (RPI), where I am majoring in Mechanical Engineering and minoring in Economics.
             <br />
-            I recently completed my second internship with <span className="purple">Softedge Technologies</span> as a Full Stack Developer Intern, where I worked on a team developing tax software.
+            I've always loved the act of creation, and this act has expanded into many different forms since enrolling at RPI. From dabbling in programming to designing workflows and being a team leader, I've learned that creation needs not always result in a physical object.
             <br />
             <br />
-            Apart from coding, some other activities that I love to do!
+            Here are some other activities I love!
           </p>
           <ul>
             <li className="about-activity">
-              <ImPointRight /> Mountain Biking
+              <ImPointRight /> Cooking 
             </li>
             <li className="about-activity">
-              <ImPointRight /> Snowboarding
+              <ImPointRight /> Rock Climbing
             </li>
             <li className="about-activity">
-              <ImPointRight /> Reading 
+              <ImPointRight /> Playing board games with friends 
             </li>
             <li className="about-activity">
-              <ImPointRight /> Traveling
+              <ImPointRight /> Consuming content of all kinds: sci-fi, philosophy, anime, literary fiction, etc.
             </li>
           </ul>
 
