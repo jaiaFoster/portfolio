@@ -1,8 +1,9 @@
 import React from "react";
 import { Col, Row } from "react-bootstrap";
 import { FaCube, FaShapes, FaIndustry } from "react-icons/fa";
-import { DiMatlab } from "react-icons/di";
-import { GiMechanicalArm, GiConveyorBelt } from "react-icons/gi";
+import { MdConveyorBelt } from "react-icons/md";
+import { GiMechanicalArm } from "react-icons/gi";
+import matlabImage from "../../Assets/matlab.png"; // Ensure the path is correct
 
 function Techstack() {
   return (
@@ -10,23 +11,29 @@ function Techstack() {
       {/* Design & Modeling Icons */}
       <Col xs={4} md={2} className="tech-icons">
         <FaCube />
+        <p>3D Modeling</p> {/* Descriptive title */}
       </Col>
       <Col xs={4} md={2} className="tech-icons">
         <FaShapes />
+        <p>CAD Design</p> {/* Descriptive title */}
       </Col>
       <Col xs={4} md={2} className="tech-icons">
         <GiMechanicalArm />
+        <p>Robotic Design</p> {/* Descriptive title */}
       </Col>
 
       {/* Analysis & Simulation Icons */}
       <Col xs={4} md={2} className="tech-icons">
-        <DiMatlab />
+        <img src={matlabImage} alt="MATLAB" style={{ width: '60px', height: '60px' }} />
+        <p>MATLAB</p> {/* Descriptive title */}
       </Col>
       <Col xs={4} md={2} className="tech-icons">
         <FaIndustry />
+        <p>Industrial Processes</p> {/* Descriptive title */}
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <GiConveyorBelt />
+        <MdConveyorBelt />
+        <p>Conveyor Systems</p> {/* Descriptive title */}
       </Col>
     </Row>
   );
