@@ -1,3 +1,4 @@
+import DesignModeling from "./DesignModeling.jsx";
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import DesignModeling from "./DesignModeling"; // Renamed Techstack to DesignModeling
