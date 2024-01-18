@@ -1,36 +1,34 @@
 import React from "react";
 import { Col, Row } from "react-bootstrap";
+import { FaIndustry, FaFlask, FaTools, FaCogs } from "react-icons/fa";
+import { GiMechanicalArm, GiConveyorBelt } from "react-icons/gi";
 
-import {
-  DiAngularSimple,
-  DiReact,
-  DiMongodb
-} from "react-icons/di";
-import {
-  SiSpringboot,
-  SiApache
-} from "react-icons/si";
-
-function Frame() {
+function ManufacturingLab() {
   return (
     <Row style={{ justifyContent: "center", paddingBottom: "50px" }}>
+      {/* Manufacturing and Fabrication Icons */}
       <Col xs={4} md={2} className="tech-icons">
-        <DiAngularSimple />
+        <FaIndustry />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <DiReact />
+        <GiConveyorBelt />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <DiMongodb />
+        <FaCogs />
+      </Col>
+
+      {/* Lab Skills Icons */}
+      <Col xs={4} md={2} className="tech-icons">
+        <FaFlask />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <SiSpringboot />
+        <GiMechanicalArm />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <SiApache />
+        <FaTools />
       </Col>
     </Row>
   );
 }
 
-export default Frame;
+export default ManufacturingLab;
