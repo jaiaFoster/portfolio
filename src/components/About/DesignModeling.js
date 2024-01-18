@@ -39,4 +39,4 @@ function Techstack() {
   );
 }
 
-export default Techstack;
+export default DesignModeling;
