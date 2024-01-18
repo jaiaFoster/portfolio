@@ -1,7 +1,8 @@
 import React from "react";
 import { Col, Row } from "react-bootstrap";
 import { FaRulerCombined, FaDraftingCompass, FaHammer, FaMicroscope } from "react-icons/fa";
-import { GiCncMachine, GiWrench } from "react-icons/gi";
+import { GiWrench } from "react-icons/gi";
+
 
 function AnalysisSimulation() {
   return (
