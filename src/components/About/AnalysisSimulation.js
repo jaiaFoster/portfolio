@@ -3,7 +3,7 @@ import { Col, Row } from "react-bootstrap";
 import { FaRulerCombined, FaDraftingCompass, FaHammer, FaMicroscope } from "react-icons/fa";
 import { GiCncMachine, GiWrench } from "react-icons/gi";
 
-function Toolstack() {
+function AnalysisSimulation() {
   return (
     <Row style={{ justifyContent: "center", paddingBottom: "50px" }}>
       {/* Manufacturing & Lab Tools */}
@@ -29,4 +29,4 @@ function Toolstack() {
   );
 }
 
-export default Toolstack;
+export default AnalysisSimulation;
