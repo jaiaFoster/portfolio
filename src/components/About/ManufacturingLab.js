@@ -1,7 +1,8 @@
 import React from "react";
 import { Col, Row } from "react-bootstrap";
 import { FaIndustry, FaFlask, FaTools, FaCogs } from "react-icons/fa";
-import { GiMechanicalArm, GiConveyorBelt } from "react-icons/gi";
+import { GiMechanicalArm } from "react-icons/gi";
+import { MdConveyorBelt } from "react-icons/md";
 
 function ManufacturingLab() {
   return (
@@ -11,7 +12,7 @@ function ManufacturingLab() {
         <FaIndustry />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <GiConveyorBelt />
+        <MdConveyorBelt />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
         <FaCogs />
