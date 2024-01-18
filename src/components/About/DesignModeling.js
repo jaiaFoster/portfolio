@@ -1,4 +1,4 @@
-import React from "react";
+gimport React from "react";
 import { Col, Row } from "react-bootstrap";
 import { FaCube, FaShapes, FaIndustry } from "react-icons/fa";
 import { MdConveyorBelt } from "react-icons/md";
