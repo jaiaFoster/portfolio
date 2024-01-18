@@ -2,7 +2,7 @@ import React from "react";
 import { Col, Row } from "react-bootstrap";
 import { FaRulerCombined, FaDraftingCompass, FaHammer, FaMicroscope } from "react-icons/fa";
 import { GiWrench } from "react-icons/gi";
-
+import CncMachine from "../../Assets/cnc.png";
 
 function AnalysisSimulation() {
   return (
@@ -15,7 +15,7 @@ function AnalysisSimulation() {
         <FaDraftingCompass />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <GiCncMachine />
+        <CncMachine />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
         <FaHammer />
