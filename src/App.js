@@ -4,7 +4,7 @@ import Navbar from "./components/Navbar";
 import Home from "./components/Home/Home";
 import About from "./components/About/About";
 import Footer from "./components/Footer";
-import Resume from "./components/Resume/Gen.Resv9.docx";
+import Resume from "./components/Resume/Gen.Resv9.pdf";
 import {
   BrowserRouter as Router,
   Route,
