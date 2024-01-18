@@ -1,31 +1,29 @@
 import React from "react";
 import { Col, Row } from "react-bootstrap";
-import {
-  SiPostman,
-  SiSlack,
-} from "react-icons/si";
-import { FaGithub, FaBitbucket, FaJira, FaAws } from "react-icons/fa";
+import { FaRulerCombined, FaDraftingCompass, FaHammer, FaMicroscope } from "react-icons/fa";
+import { GiCncMachine, GiWrench } from "react-icons/gi";
 
 function Toolstack() {
   return (
     <Row style={{ justifyContent: "center", paddingBottom: "50px" }}>
+      {/* Manufacturing & Lab Tools */}
       <Col xs={4} md={2} className="tech-icons">
-        <FaGithub />
+        <FaRulerCombined />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <FaBitbucket />
+        <FaDraftingCompass />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <SiPostman />
+        <GiCncMachine />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <SiSlack />
+        <FaHammer />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <FaJira />
+        <GiWrench />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <FaAws />
+        <FaMicroscope />
       </Col>
     </Row>
   );
