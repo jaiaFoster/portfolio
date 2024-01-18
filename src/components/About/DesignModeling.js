@@ -5,7 +5,7 @@ import { MdConveyorBelt } from "react-icons/md";
 import { GiMechanicalArm } from "react-icons/gi";
 import matlabImage from "../../Assets/matlab.png"; // Ensure the path is correct
 
-function Techstack() {
+function DesignModeling() {
   return (
     <Row style={{ justifyContent: "center", paddingBottom: "50px" }}>
       {/* Design & Modeling Icons */}
