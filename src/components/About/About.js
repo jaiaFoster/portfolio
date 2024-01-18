@@ -1,11 +1,10 @@
-import DesignModeling from "./DesignModeling.jsx";
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import DesignModeling from "./DesignModeling"; // Renamed Techstack to DesignModeling
 import Aboutcard from "./AboutCard";
 import fampic from "../../Assets/fampic.JPG";
 import AnalysisSimulation from "./AnalysisSimulation"; // Renamed Toolstack to AnalysisSimulation
 import ManufacturingLab from "./ManufacturingLab"; // Renamed Frame to ManufacturingLab
+import DesignModeling from "./DesignModeling"; // Renamed Techstack to DesignModeling
 
 function About() {
   return (
