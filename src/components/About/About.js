@@ -2,9 +2,9 @@ import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import Aboutcard from "./AboutCard";
 import fampic from "../../Assets/jaiafampic.JPG";
-import AnalysisSimulation from "./AnalysisSimulation"; // Renamed Toolstack to AnalysisSimulation
-import ManufacturingLab from "./ManufacturingLab"; // Renamed Frame to ManufacturingLab
-import DesignModeling from "./DesignModeling"; // Renamed Techstack to DesignModeling
+import AnalysisSimulation from "./AnalysisSimulation.js"; // Renamed Toolstack to AnalysisSimulation
+import ManufacturingLab from "./ManufacturingLab.js"; // Renamed Frame to ManufacturingLab
+import DesignModeling from "./DesignModeling.js"; // Renamed Techstack to DesignModeling
 
 function About() {
   return (
