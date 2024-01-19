@@ -35,18 +35,17 @@ function About() {
         <h1 className="project-heading">
           <strong className="purple">Design & Modeling </strong>
         </h1>
-        //<DesignModeling />
+        {/* <DesignModeling /> */}
 
         <h1 className="project-heading">
           <strong className="purple">Analysis & Simulation</strong>
         </h1>
-        //<AnalysisSimulation />
+        {/* <AnalysisSimulation /> */}
 
         <h1 className="project-heading">
           <strong className="purple">Manufacturing & Lab Skills</strong>
         </h1>
-        //<ManufacturingLab />
-
+        {/* <ManufacturingLab /> */}
       </Container>
     </Container>
   );
