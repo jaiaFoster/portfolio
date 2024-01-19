@@ -2,9 +2,9 @@ import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import Aboutcard from "./AboutCard";
 import fampic from "../../Assets/jaiafampic.JPG";
-import AnalysisSimulation from "./AnalysisSimulation.js"; // Renamed Toolstack to AnalysisSimulation
-import ManufacturingLab from "./ManufacturingLab.js"; // Renamed Frame to ManufacturingLab
-import DesignModeling from "./DesignModeling.js"; // Renamed Techstack to DesignModeling
+// import AnalysisSimulation from "./AnalysisSimulation.js";
+// import ManufacturingLab from "./ManufacturingLab.js"; 
+// import DesignModeling from "./DesignModeling.js"; 
 
 function About() {
   return (
@@ -35,17 +35,17 @@ function About() {
         <h1 className="project-heading">
           <strong className="purple">Design & Modeling </strong>
         </h1>
-        <DesignModeling />
+        //<DesignModeling />
 
         <h1 className="project-heading">
           <strong className="purple">Analysis & Simulation</strong>
         </h1>
-        <AnalysisSimulation />
+        //<AnalysisSimulation />
 
         <h1 className="project-heading">
           <strong className="purple">Manufacturing & Lab Skills</strong>
         </h1>
-        <ManufacturingLab />
+        //<ManufacturingLab />
 
       </Container>
     </Container>
