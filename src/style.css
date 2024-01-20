@@ -148,10 +148,11 @@ button:focus {
 .navbar-brand {
   color: rgb(250, 250, 250) !important;
 }
-
 .logo {
-  height: 1.4em !important;
-  width: 2.5em !important;
+  height: 50px; /* Adjust as needed */
+  width: 50px; /* Adjust as needed */
+  border-radius: 50%; /* This makes it circular */
+  object-fit: cover; /* This prevents the image from being squished */
 }
 
 .navbar-nav .nav-link {
