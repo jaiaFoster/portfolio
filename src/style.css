@@ -746,3 +746,39 @@ button:focus {
 .img-home{
   border-radius: 50%;
 }
+
+@media (max-width: 768px) {
+  .navbar {
+    padding: 0.5rem 1rem !important;
+    font-size: 1rem !important;
+  }
+
+  .tech-icons {
+    font-size: 2.5em !important;
+    margin: 10px !important;
+  }
+
+  .home-content, .home-about-section, .project-section, .about-section, .resume-section {
+    padding: 2rem 0 !important;
+  }
+
+  .heading, .heading-name {
+    font-size: 1.5em !important;
+    padding-left: 20px !important;
+  }
+
+  .Typewriter__wrapper {
+    font-size: 1.2em !important;
+  }
+
+  .myAvtar {
+    padding-top: 4em !important;
+  }
+
+  .footer {
+    padding: 1rem 0 !important;
+  }
+
+  .project-card, .blog-card {
+    padding: 25px 15px !important;
+  }
