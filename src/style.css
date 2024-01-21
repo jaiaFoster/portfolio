@@ -782,4 +782,21 @@ button:focus {
 
   .project-card, .blog-card {
     padding: 25px 15px !important;
-  }}
+  }
+}
+
+@media (max-width: 767px) {
+  .home-content {
+    /* Assuming .home-content contains your main text */
+    text-align: center; /* Center align the text */
+    order: 1; /* Place text first */
+  }
+
+  .myAvtar {
+    /* Assuming .myAvtar is the class for your main image */
+    display: block; /* Use block to apply margin auto */
+    margin: 0 auto; /* Center the image */
+    order: 2; /* Place image second */
+  }
+}
+
