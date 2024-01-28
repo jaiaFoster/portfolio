@@ -4,14 +4,8 @@ import Nav from "react-bootstrap/Nav";
 import Container from "react-bootstrap/Container";
 import logo from "../Assets/JF.png";
 import { Link } from "react-router-dom";
-import {
-  AiOutlineHome,
-  AiOutlineUser,
-} from "react-icons/ai";
-
-import { CgFileDocument } from "react-icons/cg";
-import { MdAssignmentInd } from "react-icons/md"; 
-
+import { AiOutlineHome, iOutlineUser} from "react-icons/ai";
+import { CgFileDocument, CgTemplate } from "react-icons/cg";
 
 function NavBar() {
   const [expand, updateExpanded] = useState(false);
@@ -79,7 +73,7 @@ function NavBar() {
             
             <Nav.Item>
               <Nav.Link as={Link} to="/portfolio" onClick={() => updateExpanded(false)}>
-                <MdAssignmentInd style={{ marginBottom: "2px" }} /> Portfolio
+                <CgTemplate style={{ marginBottom: "2px" }} /> Portfolio
               </Nav.Link>
             </Nav.Item>
 
