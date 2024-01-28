@@ -6,12 +6,7 @@ import About from "./components/About/About";
 import Portfolio from "./components/Portfolio/Portfolio";
 import Footer from "./components/Footer";
 import Resume from "./components/Resume/ResumeNew.js";
-import {
-  BrowserRouter as Router,
-  Route,
-  Routes,
-  Navigate
-} from "react-router-dom";
+import { HashRouter as Router, Route, Routes, Navigate } from 'react-router-dom';
 import ScrollToTop from "./components/ScrollToTop";
 import "./style.css";
 import "./App.css";
