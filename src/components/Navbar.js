@@ -4,7 +4,7 @@ import Nav from "react-bootstrap/Nav";
 import Container from "react-bootstrap/Container";
 import logo from "../Assets/JF.png";
 import { Link } from "react-router-dom";
-import { AiOutlineHome, iOutlineUser} from "react-icons/ai";
+import { AiOutlineHome, AiOutlineUser} from "react-icons/ai";
 import { CgFileDocument, CgTemplate } from "react-icons/cg";
 
 function NavBar() {
