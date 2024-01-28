@@ -50,12 +50,6 @@ function NavBar() {
         </Navbar.Toggle>
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="ms-auto" defaultActiveKey="#home">
-            
-            <Nav.Item>
-              <Nav.Link as={Link} to="/portfolio" onClick={() => updateExpanded(false)}>
-                <MdAssignmentInd style={{ marginBottom: "2px" }} /> Portfolio
-              </Nav.Link>
-            </Nav.Item>
 
             <Nav.Item>
               <Nav.Link as={Link} to="/" onClick={() => updateExpanded(false)}>
@@ -73,7 +67,6 @@ function NavBar() {
               </Nav.Link>
             </Nav.Item>
 
-
             <Nav.Item>
               <Nav.Link
                 as={Link}
@@ -83,7 +76,12 @@ function NavBar() {
                 <CgFileDocument style={{ marginBottom: "2px" }} /> Resume
               </Nav.Link>
             </Nav.Item>
-
+            
+            <Nav.Item>
+              <Nav.Link as={Link} to="/portfolio" onClick={() => updateExpanded(false)}>
+                <MdAssignmentInd style={{ marginBottom: "2px" }} /> Portfolio
+              </Nav.Link>
+            </Nav.Item>
 
           </Nav>
         </Navbar.Collapse>
