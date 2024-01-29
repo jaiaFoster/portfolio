@@ -17,10 +17,10 @@ const Portfolio = () => {
 
             </h3>
   
-      </div>
+      
       <div style={{ flex: 1 }}>
         <img src="sticky" alt="Sticky Notes" style={{ maxWidth: "100%" }} />
-      </div>
+      
     </div>
 
     </div>
