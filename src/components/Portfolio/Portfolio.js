@@ -13,7 +13,8 @@ const Portfolio = () => {
           Project 01: Thermocouple Welding Machine
         </h2>
             <h3 style = {{ fontSize: '12px', textAlign: "left", color: 'white', paddingTop: '10px'}}>
-            Dynamic Systems Inc. or DSI contracted our capstone team at Rensselaer Polytechnic Institute (RPI) with a project: to revitalize and redesign their 40 year old Thermocouple Welding Machine.
+            Dynamic Systems Inc. or DSI contracted our capstone team at Rensselaer Polytechnic Institute (RPI) <br />
+              with a project: to revitalize and redesign their 40 year old Thermocouple Welding Machine.
 
             </h3>
   
