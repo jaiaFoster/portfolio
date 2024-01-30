@@ -19,7 +19,7 @@ const Portfolio = () => {
   
       
       <div style={{ flex: 1 }}>
-        <img src={sticky} alt="Sticky Notes" style={{ maxWidth: 50px }} />
+        <img src={sticky} alt="Sticky Notes" style={{ maxWidth: '50px' }} />
       
     </div>
 
