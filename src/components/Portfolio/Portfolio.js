@@ -18,8 +18,8 @@ const Portfolio = () => {
             </h3>
   
       
-      <div style={{ flex: 1 }}>
-        <img src={sticky} alt="Sticky Notes" style={{ maxWidth: '50px' }} />
+      <div style={{ flex: 1, textAlign: "left"}}>
+        <img src={sticky} alt="Sticky Notes" style={{ maxWidth: '400px' }} />
       
     </div>
 
