@@ -12,15 +12,16 @@ const Portfolio = () => {
         <h2 style={{ fontSize: '24px', marginTop: '0', color: 'white', textAlign: "left"}}>
           Project 01: Thermocouple Welding Machine
         </h2>
-            <h3 style = {{ fontSize: '12px', textAlign: "left", color: 'white', paddingTop: '10px'}}>
-            Dynamic Systems Inc. or DSI contracted our capstone team at Rensselaer Polytechnic Institute (RPI) <br />
-              with a project: to revitalize and redesign their 40 year old Thermocouple Welding Machine.
+        
+        <h3 style = {{ fontSize: '12px', textAlign: "left", color: 'white', paddingTop: '10px'}}>
+        Dynamic Systems Inc. or DSI contracted our capstone team at Rensselaer Polytechnic Institute (RPI) <br />
+          with a project: to revitalize and redesign their 40 year old Thermocouple Welding Machine. So naturally after <br />
+          a couple of days we started whiteboarding and collecting ideas for different parts of the project. 
 
-            </h3>
+        </h3>
   
-      
       <div style={{ flex: 1, textAlign: "left"}}>
-        <img src={sticky} alt="Sticky Notes" style={{ maxWidth: '400px' }} />
+        <img src={sticky} alt="Sticky Notes" style={{ maxWidth: '300px', paddingLeft: '10px'}} />
       
     </div>
 
