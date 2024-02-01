@@ -1,6 +1,6 @@
 import React from 'react';
 import { Container, Row, Col, Card } from 'react-bootstrap';
-import Gallery from 'react-photo-gallery-react17'; // Updated import
+import Gallery from 'react-photo-gallery-react17'; // Make sure this matches the package you've installed
 import sticky from "../../Assets/sticky-notes.jpeg";
 import HoldingSketch from "../../Assets/HoldingSketch.png";
 import CustomvsCOTS from "../../Assets/CustomvsCOTS.png";
@@ -11,15 +11,29 @@ import WeldingSketch2 from "../../Assets/Weldingsketch2.png";
 import CAD from "../../Assets/CAD.png";
 import WeldingSketch from "../../Assets/Weldingsketch.png";
 
+// Define a custom render for gallery items to include text
+const renderImage = ({ index, left, top, key, photo }) => (
+  <div key={key} style={{ margin: '2px', position: 'absolute', left, top }}>
+    <Card style={{ width: '18rem' }}>
+      <Card.Img variant="top" src={photo.src} />
+      <Card.Body>
+        <Card.Text>
+          {photo.description}
+        </Card.Text>
+      </Card.Body>
+    </Card>
+  </div>
+);
+
 const photos = [
-  { src: HoldingSketch, width: 4, height: 3 },
-  { src: CustomvsCOTS, width: 4, height: 3 },
-  { src: HoldingSketch2, width: 4, height: 3 },
-  { src: WeldingSketch, width: 4, height: 3 },
-  { src: HoldingSketch3, width: 4, height: 3 },
-  { src: WeldingSketch2, width: 4, height: 3 },
-  { src: WholeSketch, width: 4, height: 3 },
-  { src: CAD, width: 4, height: 3 },
+  { src: sticky, width: 4, height: 3, description: "Phase 1: Ideation and Brainstorming" },
+  { src: HoldingSketch, width: 4, height: 3, description: "Phase 2: Initial Design Concepts" },
+  { src: CustomvsCOTS, width: 4, height: 3, description: "Phase 3: Custom vs. COTS Components" },
+  { src: HoldingSketch2, width: 4, height: 3, description: "Phase 4: Design Iteration 1" },
+  { src: WeldingSketch, width: 4, height: 3, description: "Phase 5: Design Iteration 2" },
+  { src: HoldingSketch3, width: 4, height: 3, description: "Phase 6: Final Design Iteration" },
+  { src: WholeSketch, width: 4, height: 3, description: "Phase 7: Complete System Overview" },
+  { src: CAD, width: 4, height: 3, description: "Phase 8: CAD Modeling and Finalization" },
 ];
 
 const Portfolio = () => {
@@ -33,26 +47,12 @@ const Portfolio = () => {
             Dynamic Systems Inc. (DSI) contracted our capstone team at Rensselaer Polytechnic Institute (RPI)
             to revitalize and redesign their 40-year-old Thermocouple Welding Machine. Our journey began with brainstorming sessions, leading to a series of design iterations.
           </p>
-          <Card className="mb-4">
-            <Card.Img variant="top" src={sticky} alt="Sticky Notes" />
-            <Card.Body>
-              <Card.Text>
-                Initial brainstorming with sticky notes to outline our design approach.
-              </Card.Text>
-            </Card.Body>
-          </Card>
-          <p style={{ color: '#fff' }}>
-            This process started with a deep dive into the existing machine, understanding its limitations, and ideating on potential improvements. We moved through various phases of design, constantly iterating based on feedback and new insights.
-          </p>
         </Col>
       </Row>
       <Row>
         <Col>
           <h3 style={{ color: '#fff' }}>Design Process Flow</h3>
-          <Gallery photos={photos} />
-          <p style={{ color: '#fff', marginTop: '20px' }}>
-            Our design process was iterative and collaborative. Starting with initial sketches, we debated the merits of custom versus off-the-shelf components, refined our concepts through multiple iterations, and finally, detailed our designs in CAD. This gallery captures the essence of our creative journey.
-          </p>
+          <Gallery photos={photos} renderImage={renderImage} />
         </Col>
       </Row>
     </Container>
