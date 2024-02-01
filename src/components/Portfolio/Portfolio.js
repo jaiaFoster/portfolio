@@ -38,7 +38,7 @@ const Portfolio = () => {
 
           <Row>
             {phases.map((phase, index) => (
-              <Col xs={12} sm={6} key={index} className="mb-4 d-flex justify-content-center">
+              <Col xs={12} md={4} key={index} className="mb-4 d-flex justify-content-center">
                 <Card className="bg-dark text-white" style={{ width: 'auto', maxWidth: '300px' }}>
                   <Card.Img variant="top" src={phase.src} style={{ objectFit: 'contain', borderRadius: '10px', height: '250px' }} />
                   <Card.Body>
