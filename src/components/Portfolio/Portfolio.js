@@ -24,29 +24,39 @@ const phases = [
 
 const Portfolio = () => {
   return (
-    <Container fluid style={{ paddingTop: '100px', color: '#fff' }}> {/* Ensure text color is set to white */}
-      <Row className="mb-5">
-        <Col>
-          <h1 style={{ fontSize: "2.1em" }} className="purple"><strong>Portfolio</strong></h1>
-          <h2 style={{ fontSize: '24px' }}>Project 01: Thermocouple Welding Machine</h2>
-        </Col>
-      </Row>
-      {phases.map((phase, index) => (
-        <Row key={index} className="mb-4">
-          <Col md={6}>
-            <Card className="bg-dark text-white"> {/* Ensure Card background is dark and text is white */}
-              <Card.Img variant="top" src={phase.src} />
-            </Card>
-          </Col>
-          <Col md={6}>
-            <Card.Body>
-              <Card.Title>{phase.title}</Card.Title>
-              <Card.Text>{phase.description}</Card.Text>
-            </Card.Body>
-          </Col>
-        </Row>
-      ))}
-    </Container>
+    <section>
+      <Container fluid className="home-section" style={{ zIndex: 2 }}>
+        
+        <Container className="home-content">
+          <Row>
+            <Col md={12} className="home-header">
+              <h1 style={{ paddingBottom: 15 }} className="heading">
+                My Portfolio
+              </h1>
+              <h1 className="heading-name">
+                The Journey of a <strong className="main-name">Mechanical Engineer</strong>
+              </h1>
+            </Col>
+          </Row>
+          
+          {phases.map((phase, index) => (
+            <Row key={index} className="mb-4 home-about-section">
+              <Col md={6}>
+                <Card className="bg-dark text-white">
+                  <Card.Img variant="top" src={phase.src} />
+                </Card>
+              </Col>
+              <Col md={6} className="home-about-description">
+                <Card.Body>
+                  <Card.Title>{phase.title}</Card.Title>
+                  <Card.Text className="home-about-body">{phase.description}</Card.Text>
+                </Card.Body>
+              </Col>
+            </Row>
+          ))}
+        </Container>
+      </Container>
+    </section>
   );
 }
 
