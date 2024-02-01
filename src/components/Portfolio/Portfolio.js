@@ -37,14 +37,14 @@ const Portfolio = () => {
           </Row>
           
           {phases.map((phase, index) => (
-            <Row key={index} className="mb-2" style={{ alignItems: 'center' }}> {/* Reduced bottom margin and aligned items center */}
-              <Col xs={12} md={4}>
-                <Card className="bg-dark text-white">
-                  <Card.Img variant="top" src={phase.src} style={{ maxHeight: '200px' }} /> {/* Made images smaller */}
+            <Row key={index} className="mb-2" style={{ alignItems: 'center' }}>
+              <Col xs={12} md={4} style={{ display: 'flex', justifyContent: 'center' }}>
+                <Card className="bg-dark text-white" style={{ width: 'auto', maxWidth: '200px' }}>
+                  <Card.Img variant="top" src={phase.src} style={{ width: '100%', height: 'auto' }} />
                 </Card>
               </Col>
-              <Col xs={12} md={8} style={{ textAlign: 'left' }}> {/* Text is now left-justified */}
-                <Card.Body style={{ paddingLeft: '15px' }}> {/* Reduced padding to bring text closer to images */}
+              <Col xs={12} md={8} style={{ textAlign: 'left' }}>
+                <Card.Body style={{ paddingLeft: '15px' }}>
                   <Card.Title>{phase.title}</Card.Title>
                   <Card.Text>{phase.description}</Card.Text>
                 </Card.Body>
