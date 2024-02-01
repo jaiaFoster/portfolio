@@ -35,22 +35,20 @@ const Portfolio = () => {
               </h1>
             </Col>
           </Row>
-          
-          {phases.map((phase, index) => (
-            <Row key={index} className="mb-2" style={{ alignItems: 'center' }}>
-              <Col xs={12} md={4} style={{ display: 'flex', justifyContent: 'center' }}>
-                <Card className="bg-dark text-white" style={{ width: 'auto', maxWidth: '200px' }}>
-                  <Card.Img variant="top" src={phase.src} style={{ width: '100%', height: 'auto' }} />
+
+          <Row>
+            {phases.map((phase, index) => (
+              <Col xs={12} md={6} key={index} className="mb-4">
+                <Card className="bg-dark text-white" style={{ maxWidth: '100%', height: 'auto' }}>
+                  <Card.Img variant="top" src={phase.src} style={{ maxHeight: '250px', width: 'auto', height: 'auto' }} />
+                  <Card.Body>
+                    <Card.Title>{phase.title}</Card.Title>
+                    <Card.Text>{phase.description}</Card.Text>
+                  </Card.Body>
                 </Card>
               </Col>
-              <Col xs={12} md={8} style={{ textAlign: 'left' }}>
-                <Card.Body style={{ paddingLeft: '15px' }}>
-                  <Card.Title>{phase.title}</Card.Title>
-                  <Card.Text>{phase.description}</Card.Text>
-                </Card.Body>
-              </Col>
-            </Row>
-          ))}
+            ))}
+          </Row>
         </Container>
       </Container>
     </section>
