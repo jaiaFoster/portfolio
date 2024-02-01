@@ -38,25 +38,14 @@ const Portfolio = () => {
 
           <Row>
             {phases.map((phase, index) => (
-              <Col xs={12} sm={6} key={index} className="mb-4">
-                <div style={{
-                  backgroundImage: `url(${phase.src})`,
-                  backgroundSize: 'contain',
-                  backgroundPosition: 'center',
-                  backgroundRepeat: 'no-repeat',
-                  height: '250px',
-                  border: '2px solid #000', // Dark border
-                  borderRadius: '10px', // Rounded corners
-                  display: 'flex',
-                  justifyContent: 'center',
-                  alignItems: 'center'
-                }}>
-                  {/* Image is set as background to maintain aspect ratio */}
-                </div>
-                <Card.Body style={{ textAlign: 'left', marginTop: '10px' }}>
-                  <Card.Title>{phase.title}</Card.Title>
-                  <Card.Text>{phase.description}</Card.Text>
-                </Card.Body>
+              <Col xs={12} sm={6} key={index} className="mb-4 d-flex justify-content-center">
+                <Card className="bg-dark text-white" style={{ width: 'auto', maxWidth: '300px' }}>
+                  <Card.Img variant="top" src={phase.src} style={{ objectFit: 'contain', borderRadius: '10px', height: '250px' }} />
+                  <Card.Body>
+                    <Card.Title>{phase.title}</Card.Title>
+                    <Card.Text>{phase.description}</Card.Text>
+                  </Card.Body>
+                </Card>
               </Col>
             ))}
           </Row>
