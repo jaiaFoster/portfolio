@@ -30,26 +30,23 @@ const Portfolio = () => {
         <Container className="home-content">
           <Row>
             <Col md={12} className="home-header">
-              <h1 style={{ paddingBottom: 15 }} className="heading">
-                My Portfolio
-              </h1>
-              <h1 className="heading-name">
-                The Journey of a <strong className="main-name">Mechanical Engineer</strong>
+              <h1 style={{ paddingBottom: 15, paddingTop: 30 }} className="heading">
+                Project 01: <strong className="main-name">The Thermocouple Welding Machine</strong>
               </h1>
             </Col>
           </Row>
           
           {phases.map((phase, index) => (
-            <Row key={index} className="mb-4 home-about-section">
-              <Col md={6}>
+            <Row key={index} className="mb-2" style={{ alignItems: 'center' }}> {/* Reduced bottom margin and aligned items center */}
+              <Col xs={12} md={4}>
                 <Card className="bg-dark text-white">
-                  <Card.Img variant="top" src={phase.src} />
+                  <Card.Img variant="top" src={phase.src} style={{ maxHeight: '200px' }} /> {/* Made images smaller */}
                 </Card>
               </Col>
-              <Col md={6} className="home-about-description">
-                <Card.Body>
+              <Col xs={12} md={8} style={{ textAlign: 'left' }}> {/* Text is now left-justified */}
+                <Card.Body style={{ paddingLeft: '15px' }}> {/* Reduced padding to bring text closer to images */}
                   <Card.Title>{phase.title}</Card.Title>
-                  <Card.Text className="home-about-body">{phase.description}</Card.Text>
+                  <Card.Text>{phase.description}</Card.Text>
                 </Card.Body>
               </Col>
             </Row>
