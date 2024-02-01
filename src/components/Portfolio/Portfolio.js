@@ -1,6 +1,6 @@
 import React from 'react';
 import { Container, Row, Col, Card } from 'react-bootstrap';
-import Gallery from 'react-photo-gallery';
+import Gallery from 'react-photo-gallery-react17'; // Updated import
 import sticky from "../../Assets/sticky-notes.jpeg";
 import HoldingSketch from "../../Assets/HoldingSketch.png";
 import CustomvsCOTS from "../../Assets/CustomvsCOTS.png";
