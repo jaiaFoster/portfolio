@@ -1,13 +1,13 @@
 import React from 'react';
 import { Container, Row, Col, Card } from 'react-bootstrap';
-import Gallery from 'react-photo-gallery-react17'; // Make sure this matches the package you've installed
+import Gallery from 'react-photo-gallery-react17'; // Ensure this matches the installed package
 import sticky from "../../Assets/sticky-notes.jpeg";
 import HoldingSketch from "../../Assets/HoldingSketch.png";
 import CustomvsCOTS from "../../Assets/CustomvsCOTS.png";
 import HoldingSketch2 from "../../Assets/Holdingsketch2.png";
 import WholeSketch from "../../Assets/Wholesketch.png";
 import HoldingSketch3 from "../../Assets/Holdingsketch3.png";
-import WeldingSketch2 from "../../Assets/Weldingsketch2.png";
+import WeldingSketch2 from "../../Assets/Weldingsketch2.png"; // This import is now used
 import CAD from "../../Assets/CAD.png";
 import WeldingSketch from "../../Assets/Weldingsketch.png";
 
@@ -31,9 +31,10 @@ const photos = [
   { src: CustomvsCOTS, width: 4, height: 3, description: "Phase 3: Custom vs. COTS Components" },
   { src: HoldingSketch2, width: 4, height: 3, description: "Phase 4: Design Iteration 1" },
   { src: WeldingSketch, width: 4, height: 3, description: "Phase 5: Design Iteration 2" },
-  { src: HoldingSketch3, width: 4, height: 3, description: "Phase 6: Final Design Iteration" },
-  { src: WholeSketch, width: 4, height: 3, description: "Phase 7: Complete System Overview" },
-  { src: CAD, width: 4, height: 3, description: "Phase 8: CAD Modeling and Finalization" },
+  { src: WeldingSketch2, width: 4, height: 3, description: "Phase 6: Advanced Welding Concepts" }, // Newly added phase
+  { src: HoldingSketch3, width: 4, height: 3, description: "Phase 7: Final Design Iteration" },
+  { src: WholeSketch, width: 4, height: 3, description: "Phase 8: Complete System Overview" },
+  { src: CAD, width: 4, height: 3, description: "Phase 9: CAD Modeling and Finalization" },
 ];
 
 const Portfolio = () => {
