@@ -36,29 +36,30 @@ const Portfolio = () => {
             </Col>
           </Row>
 
-          {phases.map((phase, index) => (
-            <Row key={index} className="mb-4" style={{ alignItems: 'center' }}>
-              <Col xs={12} md={6} style={{ display: 'flex', justifyContent: 'flex-start' }}>
-                <div className="image-container" style={{
+          <Row>
+            {phases.map((phase, index) => (
+              <Col xs={12} sm={6} key={index} className="mb-4">
+                <div style={{
                   backgroundImage: `url(${phase.src})`,
                   backgroundSize: 'contain',
-                  backgroundPosition: 'left center', // Align background image to the left
+                  backgroundPosition: 'center',
                   backgroundRepeat: 'no-repeat',
                   height: '250px',
-                  width: '100%',
-                  border: '1px solid #ddd' // Add a light border for visibility
+                  border: '2px solid #000', // Dark border
+                  borderRadius: '10px', // Rounded corners
+                  display: 'flex',
+                  justifyContent: 'center',
+                  alignItems: 'center'
                 }}>
                   {/* Image is set as background to maintain aspect ratio */}
                 </div>
-              </Col>
-              <Col xs={12} md={6} style={{ textAlign: 'left', paddingLeft: 0 }}> {/* Remove padding to align text with the image */}
-                <Card.Body>
+                <Card.Body style={{ textAlign: 'left', marginTop: '10px' }}>
                   <Card.Title>{phase.title}</Card.Title>
                   <Card.Text>{phase.description}</Card.Text>
                 </Card.Body>
               </Col>
-            </Row>
-          ))}
+            ))}
+          </Row>
         </Container>
       </Container>
     </section>
