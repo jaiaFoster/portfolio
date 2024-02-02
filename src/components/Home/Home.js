@@ -8,17 +8,16 @@ function Home() {
       <Container fluid className="home-section" id="home" style={{ zIndex: 2 }}>
         
         <Container className="home-content">
-          <Row>
+          <Row className="align-items-center"> {/* Add this class to vertically center content within the row */}
             <Col md={7} className="home-header">
               <h1 style={{ paddingBottom: 15 }} className="heading">
                 Hello, I'm Jaia
               </h1>
-
               <h1 className="heading-name">
                 A Passionate <strong className="main-name">Mechanical Engineer</strong>
               </h1>
             </Col>
-
+          
             <Col md={5} style={{ paddingBottom: 20 }}>
               <img
                 src={headshot}
