@@ -800,3 +800,8 @@ button:focus {
   }
 }
 
+.portfolio-header {
+  paddingBottom: 15px;
+  paddingTop: 10px; /* Adjust as needed */
+  /* Add any other styles you want for your header */
+}
