@@ -66,7 +66,7 @@ const Portfolio = () => {
         
         <Container className="home-content">
           <Row>
-            <Col md={12} className="home-header">
+            <Col md={12} className="portfolio-header">
               <h1 style={{ paddingBottom: 15, paddingTop: 10 }} className="heading">
                 Project 01: <strong className="main-name">The Thermocouple Welding Machine</strong>
               </h1>
